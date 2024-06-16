@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- 
+    a. Dados pessoais, onde o cliente deverá fornecer seu nome, e-mail, e telefone para contato.
+    b. Pesquisa, onde o cliente deverá responder a três perguntas. Duas delas utilizarão radio buttons como campo de resposta, 
+    e uma utilizará menu de dropdown. Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar 
+    sua resposta com terceiros.
+-->
+    <h1>Formulário de pesquisa de satisfação</h1>
+
+    <h2>Dados Pessoais</h2>
+    <form action="" method="post">
+        <p>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome completo">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="E-mail">
+        </p>
+
+        <p>
+            <label for="phone">Telefone:</label>
+            <input type="number" id="phone" placeholder="Numero de Telefone">
+        </p>
+
+        <h2>Responda as perguntas</h2>
+
+        <p><strong>Pergunta número 1</strong></p>
+        <p>
+            <label for="option1">Opção 1</label>
+            <input type="radio" id="option1" name="survey1">
+
+            <label for="option2">Opção 2</label>
+            <input type="radio" id="option2" name="survey1">
+
+            <label for="option3">Opção 3</label>
+            <input type="radio" id="option3" name="survey1">
+        </p>
+
+        <p><strong>Pergunta número 2</strong></p>
+        <p>
+            <label for="option1">Opção 1</label>
+            <input type="radio" id="option1" name="survey2">
+
+            <label for="option2">Opção 2</label>
+            <input type="radio" id="option2" name="survey2">
+        </p>
+
+        <p><strong>Pergunta número 3</strong></p>
+        <p>
+            <select>
+                <option>Opção 1</option>
+                <option>Opção 2</option>
+                <option>Opção 3</option>
+                <option>Opção 4</option>
+                <option>Opção 5</option>
+                <option>Opção 6</option>
+                <option>Opção 7</option>
+            </select>
+        </p>
+        <p>
+            <label for="term"><strong>Autorizo o uso dessas informações</strong></label for="term">
+            <input type="checkbox" id="term">
+        </p>
+        
+        <input type="submit" value="Log In">
+
+    </form>
+</body>
+
+</html>
